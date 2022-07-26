@@ -127,11 +127,13 @@ nav ul li a:hover::after{
 .about-body{
     padding-top: 2%;
     font-size: 20px;
+    text-align: left;
 }
 
 .col-titles{
     display: flex;
     margin: 20px 0 40px;
+   
 }
 .col-links{
     margin-right: 50px;
@@ -194,6 +196,10 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
+.thankyou{
+    text-align: center;
+}  
+
 /* ----------------Contact Page-------------------- */
 
 #contact{
@@ -229,8 +235,9 @@ nav ul li a:hover::after{
 
 /* ------------------CSS for Small Screen----------------- */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
    #header{
-    background-image: url();
-   } 
+    background-image: none;
+   
+   }
 }
