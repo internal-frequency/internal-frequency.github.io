@@ -27,7 +27,7 @@ body{
     font-size: 6vh;
     text-shadow: rgb(121, 121, 121) 3px 2px;
 }
-.title span{
+span{
     color: rgb(231, 209, 11) ;
 }
 
@@ -82,4 +82,113 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: rgb(231, 209, 11) ;
+}
+
+/* -----------About-------- */
+#about{
+    padding: 80px 0;
+    color: rgb(146, 146, 146);
+    background-color: black;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgb(34, 34, 34) 2px 2px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-shadow: rgb(121, 121, 121) 2px 2px;
+}
+
+.about-body{
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.col-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.col-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.col-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:rgb(231, 209, 11);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.col-links.active-link::after{
+    width: 50%;
+}
+
+.col-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.col-contents{
+    display: none;
+}
+
+.col-contents.active-col{
+    display: block;
+}
+
+/* -----------Projects------------- */
+
+#projects{
+    padding: 50px 0 10px;
+    color: rgb(146, 146, 146);
+    background-color: rgb(3, 3, 3);
+}
+
+
+
+
+.proj-list img{
+    width: 400px;
+    border-radius: 15px;
+    border-style:groove;
+    border-color: rgb(138, 138, 138) ;
+}
+
+.proj-list{
+    display: flex;
+}
+
+.proj{
+    flex: 33.33%;
+    padding: 10px;
+    margin-top: 50px;
 }

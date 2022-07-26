@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Javascript.js"></script>
 </head>
 <body>
     <div id="header">
@@ -22,7 +23,7 @@
 
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer / Web Development</p>
+                <p>Software Devlopement Student</p>
                 <h1>Hi, I'm <span>Aaron</span> I'm a student at S.A.I.T studying <br>
                     Information Technology and planning on pursuing <br> a career
                     in UI/UX design and frontend development.
@@ -30,15 +31,96 @@
             </div>
         </div>
     </div>
-
+                                <!-- -----------ABOUT SECTION--------- -->
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1"></div>
-                <div class="about-col-2"></div>
+                <div class="about-col-1">
+                    <img class="aboutPic" src="Images/AaronDj.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p class="about-body">I am currently completing a diploma in information Technology
+                        with a major in software development at the Southern Alberta Institute
+                        Of Technology (SAIT) in Calgary, Ab Canada. <br>
+                        My background before starting this program was in construction.  I was an Ironworker
+                        for many years and had moved into a management position pre-covid. <br><br>
+
+                        During the pandemic I re-evaluated my career-path and what I wanted to do with my life
+                        and was drawn towards technology. Through my time at SAIT I realized frontend development and 
+                        UI/UX design is the path I wish to follow within the I.T world. <br><br> 
+                    </p>
+                    <div class="col-titles">
+                        <p class="col-links active-link" onclick="openCol('languages')">Languages</p>
+                        <p class="col-links" onclick="openCol('hobbies')">Hobbies</p>
+                        <p class="col-links" onclick="openCol('education')">Education</p>
+                    </div>
+
+                    <div class="col-contents active-col" id="languages">
+                        <ul>
+                            <li><span>Java</span></li>
+                            <li><span>React</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-contents" id="hobbies">
+                        <ul>
+                            <li><span>Music Production</span></li>
+                            <li><span>Golf</span></li>
+                            <li><span>Snowboarding</span></li>
+                            <li><span>Fly Fishing</span></li>
+                            <li><span>Hiking</span></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-contents" id="education">
+                        <ul>
+                            <li><span>2021-2022</span><br>Information Tecnology Diploma at SAIT</li>
+                        
+                        </ul>
+                    </div>
+                  
+                        <br><br>
+                    <p class="about-body">
+                        Thank you for visiting my page and have a wonderful day!
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+<!-- ------------Projects------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title"><span>My</span> Projects</h1>
+        <div class="proj-list">
+            <div class="proj">
+                <img src="/Images/project2.jpg" style="width:100%">
+                <p>Lab 1 CPRG-352-SDD </p>
+            </div>
+
+            <div class="proj">
+                <img src="/Images/Project 4.jpg" style="width:100%">
+                <p>Lab 2 CPRG-352-SDD </p>
+            </div>
+
+            <div class="proj">
+                <img src="/Images/project3.jpg" style="width:100%">
+                <p>Lab 3 CPRG-352-SDD </p>
+            </div>
+
+            <div class="proj">
+                <img src="/Images/UxDesign.jpg" style="width:100%">
+                <p>Figma Prototype</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
    
