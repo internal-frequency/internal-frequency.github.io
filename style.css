@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: black;
     background-image: url(/Images/Background.jpg);
@@ -88,7 +92,7 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: rgb(146, 146, 146);
-    background-color: black;
+    background-color: rgb(8, 8, 8);
     
 }
 
@@ -170,7 +174,7 @@ nav ul li a:hover::after{
 #projects{
     padding: 50px 0 10px;
     color: rgb(146, 146, 146);
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(17, 17, 17);
 }
 
 .proj-list img{
@@ -188,4 +192,45 @@ nav ul li a:hover::after{
     flex: 33.33%;
     padding: 10px;
     margin-top: 50px;
+}
+
+/* ----------------Contact Page-------------------- */
+
+#contact{
+    padding: 50px 0 10px;
+    color: rgb(146, 146, 146);
+    background-color: rgb(26, 26, 26);
+ 
+}
+
+.contact{
+    justify-content: center;
+}
+
+
+.contact p{
+    margin-top: 10%;
+    margin-left: 3%;
+    font-size: 25px;
+}
+
+.social-icons{
+    padding-top: 25%;
+    display: flex;
+    column-gap: 3%;
+    transition: ease-in 0.5s;
+    
+}
+
+.icon:hover{
+     transform: translateY(-10px);
+     display: inline-block;
+}
+
+/* ------------------CSS for Small Screen----------------- */
+
+@media only screen and (max-width: 600px){
+   #header{
+    background-image: url();
+   } 
 }
